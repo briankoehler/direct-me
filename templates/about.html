@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles.css') }}">
+
+    <title>DirectMe - About</title>
+</head>
+
+<body>
+
+    <div id='navbar'>
+        <a href='/'>
+            <h1 id='Logo'>DirectMe</h1>
+        </a>
+        <a href='/about'>
+            <h3>About</h3>
+        </a>
+        <a href='/help'>
+            <h3>Help</h3>
+        </a>
+    </div>
+
+    <div class='container-2'>
+        <h2>About</h2>
+        <p>
+            This web app is designed to translate communication between 
+            two different languages, enabling someone to provide directions 
+            to another individual to a building on the campus of the University 
+            of Florida.
+            <br>
+            <br>
+            It is built using Flask, HTML, JavaScript, and CSS.  It relies on Google 
+            Cloud's Translation API and LeafletJS for the map.  The map tiles implemented 
+            are OpenStreetMap, and UF's official overlay.
+        </p>
+    </div>
+
+    <div class='container-2'>
+        <h2>关于</h2>
+        <p>
+            此网络应用旨在翻译以下内容之间的通信
+            两种不同的语言，使某人可以提供指示
+            给另一个人到大学校园里的一栋楼
+            佛罗里达州
+            <br>
+            <br>
+            它是使用Flask和HTML，JavaScript和CSS构建的。该地图依赖于Google Cloud的Translation 
+            API和LeafletJS。实现的地图图块是OpenStreetMap，以及UF的官方叠加层
+        </p>
+    </div>
+
+</body>
+</html>
