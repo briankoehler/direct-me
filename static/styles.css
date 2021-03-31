@@ -26,6 +26,10 @@ button:hover {
     background-color: rgb(116, 165, 255);
 }
 
+button:active {
+    background-color: rgb(73, 137, 255);
+}
+
 #navbar {
     width: 100vw;
     height: 64px;
@@ -161,4 +165,20 @@ button:hover {
 #survey-button {
     width: 256px;
     height: 32px;
+}
+
+.fa-thumbs-up:hover {
+    color: lightgreen;
+}
+
+.fa-thumbs-up:active {
+    color: green;
+}
+
+.fa-thumbs-down:hover {
+    color: lightcoral;
+}
+
+.fa-thumbs-down:active {
+    color: red;
 }

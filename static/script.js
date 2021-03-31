@@ -21,18 +21,18 @@ const translate = async (source, target) => {
     if (source == 'en') {
         document.getElementById('english-thumbs-up').classList.add('far')
         document.getElementById('english-thumbs-up').classList.remove('fas')
-        document.getElementById('english-thumbs-up').style.color = 'black';
+        // document.getElementById('english-thumbs-up').style.color = 'black';
         document.getElementById('english-thumbs-down').classList.add('far')
         document.getElementById('english-thumbs-down').classList.remove('fas')
-        document.getElementById('english-thumbs-down').style.color = 'black';
+        // document.getElementById('english-thumbs-down').style.color = 'black';
     }
     else {
         document.getElementById('chinese-thumbs-up').classList.add('far')
         document.getElementById('chinese-thumbs-up').classList.remove('fas')
-        document.getElementById('chinese-thumbs-up').style.color = 'black';
+        // document.getElementById('chinese-thumbs-up').style.color = 'black';
         document.getElementById('chinese-thumbs-down').classList.add('far')
         document.getElementById('chinese-thumbs-down').classList.remove('fas')
-        document.getElementById('chinese-thumbs-down').style.color = 'black';
+        // document.getElementById('chinese-thumbs-down').style.color = 'black';
     }
 };
 
@@ -91,4 +91,18 @@ window.onload = () => {
             }
         }
     }));
+
+    document.getElementById('original-english').addEventListener('keydown', (e) => {
+        if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault()
+            translate('en', 'zh')
+        }
+    })
+
+    document.getElementById('original-chinese').addEventListener('keydown', (e) => {
+        if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault()
+            translate('zh', 'en')
+        }
+    })
 };
