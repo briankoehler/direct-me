@@ -19,11 +19,19 @@ const translate = async (source, target) => {
     destination.innerHTML = data['translatedText'];
 
     if (source == 'en') {
+        document.getElementById('english-thumbs-up').classList.add('far')
+        document.getElementById('english-thumbs-up').classList.remove('fas')
         document.getElementById('english-thumbs-up').style.color = 'black';
+        document.getElementById('english-thumbs-down').classList.add('far')
+        document.getElementById('english-thumbs-down').classList.remove('fas')
         document.getElementById('english-thumbs-down').style.color = 'black';
     }
     else {
+        document.getElementById('chinese-thumbs-up').classList.add('far')
+        document.getElementById('chinese-thumbs-up').classList.remove('fas')
         document.getElementById('chinese-thumbs-up').style.color = 'black';
+        document.getElementById('chinese-thumbs-down').classList.add('far')
+        document.getElementById('chinese-thumbs-down').classList.remove('fas')
         document.getElementById('chinese-thumbs-down').style.color = 'black';
     }
 };
