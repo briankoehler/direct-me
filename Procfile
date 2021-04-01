@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0$PORT views:app
+web: gunicorn views:app
