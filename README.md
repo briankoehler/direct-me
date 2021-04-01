@@ -28,7 +28,6 @@ to another individual to a building on the campus of the University
 of Florida.  It is built using Flask, HTML, JavaScript, and CSS.  It relies on Google Cloud's Translation API and LeafletJS for the map.  The map tiles implemented are OpenStreetMap, and UF's official overlay.
 
 
-
 ### Dependencies
 * Flask
 * Google Cloud Translate v2
