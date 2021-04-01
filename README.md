@@ -1,4 +1,4 @@
-# DirectMe
+# GatorCom
 
 ### Starting the Web App
 This guide assumes that you are using Python3.  If you are not 
@@ -6,8 +6,8 @@ on Python3, please upgrade before doing any of the following.  It also assumes y
 
 Type the following into your terminal:
 ```
-git clone https://github.com/briankoehler/direct-me
-cd direct-me
+git clone https://github.com/briankoehler/gatorcom
+cd gatorcom
 pip3 install flask
 pip3 install google-cloud-translate==2.0.1
 ```
